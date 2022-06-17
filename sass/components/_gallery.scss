@@ -1,4 +1,10 @@
 .gallery {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+
+.gallery {
     margin-top: 0;
     padding-top: 94px;
     padding-bottom: 94px;
