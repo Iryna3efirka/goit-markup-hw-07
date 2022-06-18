@@ -27,14 +27,12 @@
 
 .gallery__item {
     margin-right: 30px;
-}
-
-.gallery__item {
 
     &:last-child {
         margin-right: 0;
     }
 }
+
 .gallery__wrapper {
     position: relative;
 }
