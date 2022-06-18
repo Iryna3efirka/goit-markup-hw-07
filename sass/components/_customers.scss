@@ -36,7 +36,7 @@
 .customer__item {
 
     @media screen and (max-width: 767px) {
-        width: calc((100% - 2 * 30px) / 2);
+        width: calc((100% - 30px) / 2);
     
         &:nth-child(2n+1) {
             margin-right: 30px;
@@ -48,7 +48,7 @@
     }
         
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        width: calc((100% - 3 * 30px) / 3);
+        width: calc((100% - 2 * 30px) / 3);
 
         &:not(:nth-child(3n)) {
             margin-right: 30px;
@@ -72,7 +72,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    width: 100%;
     height: 92px;
     border: 1px solid;
     color: $link-color;
@@ -80,6 +80,10 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+    }
 }
 
 .customer__link {

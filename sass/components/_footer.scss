@@ -1,11 +1,29 @@
-.container-address {
-    margin-right: 70px;
-}
-
 .contact-info {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $auxiliary-bg-color;
+}
+.container-address-network {
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+       display: flex;
+       justify-content: center;
+    }
+}
+.container-address {
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 165px;
+    }
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+    }
 }
 
 .logo-studio-2 {
@@ -16,6 +34,20 @@
     margin-top: 20px;
 }
 
+.contact-info-item {
+
+    &:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        
+        &:not(:last-child) {
+            margin-bottom: 9px;
+        }
+    }
+}
+
 .contact-info-address {
     font-style: normal;
     font-weight: 400;
@@ -23,13 +55,6 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: $primary-color;
-}
-
-.contact-info-item {
-
-    &:not(:last-child) {
-        margin-bottom: 9px;
-    }
 }
 
 .contact-info-link {
@@ -42,12 +67,21 @@
 }
 
 .contact-info .container {
-    display: flex;
-    align-items: baseline;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;  
+    }
 }
 
 .container-network {
-    margin-right: 93px;
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+    }
 }
 
 .text-network {
@@ -58,6 +92,10 @@
     text-transform: uppercase;
     color: $primary-color;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
 }
 
 .footer-list-network {
@@ -112,32 +150,49 @@
     color: $primary-color;
     margin-bottom: 20px;
     display: block;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
 }
 
 .subscription {
-    display: flex;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 
 .subscription input {
-    display: flex;
     align-items: center;
-    width: 358px;
     height: 50px;
     padding: 15px 16px;
     border: 1px solid $border-color-rgba;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    margin-right: 12px;
     background-color: inherit;
     cursor: pointer;
     outline: none;
-}
-
-.subscription input {
 
     &:focus {
         border-color: $border-color-rgba;
-            color: $primary-color;
+        color: $primary-color;
+    }
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 358px;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        width: 358px;
+        margin-right: 12px;
     }
 }
 
@@ -170,9 +225,6 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.subscription-btn {
 
     &:hover,
     &:focus {
